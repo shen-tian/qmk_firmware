@@ -17,5 +17,6 @@ Changes so far:
  - Space Cadet shift/brackets
  - Cleaned up most of the `Lower` layer. Using the WSAD keys for cursor.
  - Removed the `DVORAK` and `COLEMK` layers.
+ - Make the `Lower` layer contain `-=[]\`
  
  Current thinking is to get the NB keys where they need to be, then start moving the less important ones into position.
