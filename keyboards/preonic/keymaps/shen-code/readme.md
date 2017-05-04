@@ -15,5 +15,6 @@ Changes so far:
  - Changed the bottom left key to "Eject", so the Control Shift Eject "lock" combo works. Probably not what I want to leave it on
  - Moved the Right arrow to just below the backspace, mainly because that key is underused by default (delete).
  - Space Cadet shift/brackets
+ - Cleaned up most of the `Lower` layer. Using the WSAD keys for cursor.
  
  Current thinking is to get the NB keys where they need to be, then start moving the less important ones into position.
