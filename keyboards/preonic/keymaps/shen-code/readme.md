@@ -1,15 +1,17 @@
-# The `shen-code` layout - largely based on the Preonic default
+# The `shen-code` layout
 
-Stated goal:
+This used the Preonic default as a starting point. This is for use in  macOS, with emacs as the main code editor.
+ 
+## Philosophy:
+ 
+Don't get too weird. Don't want to struggle too much to change between this and a normal keyboard. Thus, use QWERTY, and keep as much relative positioning as possible. 
+ 
+## Layout
 
- - Use in macOS, with emacs as the main code editor.
- 
- Philosophy:
- 
- - Don't get too weird. Don't want to struggle too much to change between this and a normal keyboard. Thus, use QWERTY, and keep as much relative positioning as possible. 
+As much as possible is done with the base layer (and shift) and the `lower` layer without shift. We'd like to potentially get rid off of the `raise` layer. The adjust layer is rarely used, so can probably stay.
  
 ````
-Qwerty
+Base
 
  ,-----------------------------------------------------------------------------------.
  |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
@@ -23,7 +25,6 @@ Qwerty
  | Eject| Ctrl | Alt  | Super|Lower |    Space    |Raise | Left | Down |  Up  |Enter |
  `-----------------------------------------------------------------------------------'
 
-
 Lower
 
  ,-----------------------------------------------------------------------------------.
@@ -33,10 +34,22 @@ Lower
  |------+------+------+------+------+-------------+------+------+------+------+------|
  |      | Left | Down |Right |      |      |      |   _  |   +  |   {  |   }  |  |   |
  |------+------+------+------+------+------|------+------+------+------+------+------|
- |      |  F7  |  F8  |  F9  |  F10 |  F11 |      |   -  |   =  |   [  |   ]  |  \   |
+ |      |      |      |      |      |      |      |   -  |   =  |   [  |   ]  |  \   |
  |------+------+------+------+------+------+------+------+------+------+------+------|
- |      |      |      |      |      |             |      | Next | Vol- | Vol+ | Play |
+ |      |      |      |      |      |             |      | Mute | Vol- | Vol+ | Play |
  `-----------------------------------------------------------------------------------'
+ 
+````
+
+The layout uses two shift keys for alternate hand use. These are also configured for Space Cadet mode (where pressing them without an additional key gives brackets). The enter key is on the bottom right hand corner, where it's easily palmed.
+
+The `Lower` layer contains the missing symbols for coding, in a similar layout to where they'd normally appear. Since they are already on a layer, no shift is needed (though that still works for the bottom row of symbols).
+
+The volume control and media keys are kind of useful.
+
+Compared to the default layout, there's no DVORAK or COLEMK. I don't have any plans for using those.
+
+````
 
 
 Raise
@@ -70,15 +83,9 @@ Adjust (Lower + Raise)
 
 ````
 
-Changes so far:
+Other changes so far:
 
- - Added right shift opposite left shift. 
- - Moved Enter to bottom right corner, use via palming
  - Changed the bottom left key to "Eject", so the Control Shift Eject "lock" combo works. Probably not what I want to leave it on
  - Moved the Right arrow to just below the backspace, mainly because that key is underused by default (delete).
- - Space Cadet shift/brackets
- - Cleaned up most of the `Lower` layer. Using the WSAD keys for cursor.
- - Removed the `DVORAK` and `COLEMK` layers.
- - Make the `Lower` layer contain `-=[]\`
  
  Current thinking is to get the NB keys where they need to be, then start moving the less important ones into position.
