@@ -14,27 +14,27 @@ As much as possible is done with the base layer (and shift) and the `lower` laye
 Base
 
  ,-----------------------------------------------------------------------------------.
- |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |  \   |
  |------+------+------+------+------+------+------+------+------+------+------+------|
- | Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  |Right |
+ | Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Bksp |
  |------+------+------+------+------+-------------+------+------+------+------+------|
  | Esc  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   |
  |------+------+------+------+------+------|------+------+------+------+------+------|
  | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Shift |
  |------+------+------+------+------+------+------+------+------+------+------+------|
- | Eject| Ctrl | Alt  | Super|Lower |    Space    |Raise | Left | Down |  Up  |Enter |
+ | Enter| Ctrl | Alt  | Super|Lower |    Space    |Raise | Ctrl | Down |  Up  |Enter |
  `-----------------------------------------------------------------------------------'
 
 Lower
 
  ,-----------------------------------------------------------------------------------.
- |      |      |      |      |      |      |      |      |      |      |      |      |
+ |      |      |      |      |      |      |      |      |      |      |      | Lock |
  |------+------+------+------+------+-------------+------+------+------+------+------|
  |      |      |  Up  |      |      |      |      |      |      |      |      |      |
  |------+------+------+------+------+-------------+------+------+------+------+------|
- |      | Left | Down |Right |      |      |      |   _  |   +  |   {  |   }  |  |   |
+ |      | Left | Down |Right |      |      |      |   _  |   +  |   {  |   }  |      |
  |------+------+------+------+------+------|------+------+------+------+------+------|
- |      |      |      |      |      |      |      |   -  |   =  |   [  |   ]  |  \   |
+ |      |      |      |      |      |      |      |   -  |   =  |   [  |   ]  |      |
  |------+------+------+------+------+------+------+------+------+------+------+------|
  |      |      |      |      |      |             |      | Mute | Vol- | Vol+ | Play |
  `-----------------------------------------------------------------------------------'
@@ -48,6 +48,8 @@ The `Lower` layer contains the missing symbols for coding, in a similar layout t
 The volume control and media keys are kind of useful.
 
 Compared to the default layout, there's no DVORAK or COLEMK. I don't have any plans for using those.
+
+Lock is implemented as a macro. `Ctrl-Shift-Power`.
 
 ````
 
@@ -89,3 +91,15 @@ Other changes so far:
  - Moved the Right arrow to just below the backspace, mainly because that key is underused by default (delete).
  
  Current thinking is to get the NB keys where they need to be, then start moving the less important ones into position.
+ 
+Changes to consider:
+
+ - Have the \ and | on the top layer, but on the top right corner, where the Backspace is. These aren't used insanely much, so having them out of the way but printed is probably not the worst. This key also varies location on common keyboards.
+ - Correspondingly, move the Backspace down into where "Right" is.
+ - If the lower layer cursor keys work well, then probaby no use wasting space with the cursors on the top layer. Consider having a second control or meta key?
+ - Bottom left: good palming key. Can put it to better use?
+ - If Raise laywer is not used a lot, then reclaim that good thumb key?
+ - Consider moving lower layer symbols up one roll. Easier to reach up than down? Is that true?
+ - Line the F keys to the numerics? i.e. start at 1, and have F11 and F12 go to Q and W.
+ 
+Think most of the gains will come from better use of bottom row. But need to code a bit more for that to come through. 
