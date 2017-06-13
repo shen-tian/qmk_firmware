@@ -30,11 +30,11 @@ Lower
  ,-----------------------------------------------------------------------------------.
  |      |      |      |      |      |      |      |      |      |      |      | Lock |
  |------+------+------+------+------+-------------+------+------+------+------+------|
- |      |      |  Up  |      |      |      |      |      |      |      |      |      |
+ |      |      |  Up  |      |      |      |      |   _  |   +  |   {  |   }  |      |
  |------+------+------+------+------+-------------+------+------+------+------+------|
- |      | Left | Down |Right |      |      |      |   _  |   +  |   {  |   }  |      |
+ |      | Left | Down |Right |      |      |      |   -  |   =  |   [  |   ]  |      |
  |------+------+------+------+------+------|------+------+------+------+------+------|
- |      |      |      |      |      |      |      |   -  |   =  |   [  |   ]  |      |
+ |      |      |      |      |      |      |      |      |      |      |      |      |
  |------+------+------+------+------+------+------+------+------+------+------+------|
  |      |      |      |      |      |             |      | Mute | Vol- | Vol+ | Play |
  `-----------------------------------------------------------------------------------'
@@ -85,21 +85,9 @@ Adjust (Lower + Raise)
 
 ````
 
-Other changes so far:
+Outstanding questions:
 
- - Changed the bottom left key to "Eject", so the Control Shift Eject "lock" combo works. Probably not what I want to leave it on
- - Moved the Right arrow to just below the backspace, mainly because that key is underused by default (delete).
- 
- Current thinking is to get the NB keys where they need to be, then start moving the less important ones into position.
- 
-Changes to consider:
-
- - Have the \ and | on the top layer, but on the top right corner, where the Backspace is. These aren't used insanely much, so having them out of the way but printed is probably not the worst. This key also varies location on common keyboards.
- - Correspondingly, move the Backspace down into where "Right" is.
- - If the lower layer cursor keys work well, then probaby no use wasting space with the cursors on the top layer. Consider having a second control or meta key?
  - Bottom left: good palming key. Can put it to better use?
- - If Raise laywer is not used a lot, then reclaim that good thumb key?
- - Consider moving lower layer symbols up one roll. Easier to reach up than down? Is that true?
  - Line the F keys to the numerics? i.e. start at 1, and have F11 and F12 go to Q and W.
  
 Think most of the gains will come from better use of bottom row. But need to code a bit more for that to come through. 
